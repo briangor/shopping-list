@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="shopListApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div ng-controller="shopCtrl">
+        <ul>
+            <li ng-repeat="x in products">
+                {{x}}<span ng-click="removeItem($index)">&times;</span>
+            </li>
+        </ul>
+        <input ng-model="addItem">
+        <button ng-click="addItemFx()">Add</button>
+        <p></p>{{errortext}}</p>
+    </div>
+
+
+</body>
+
+</html>
