@@ -1,1 +1,3 @@
-
+body{
+  background-image: transform(130deg, purple, blue);
+}
