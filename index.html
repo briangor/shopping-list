@@ -10,14 +10,25 @@
 
 <body>
   
-<div ng-app="ShoppingListApp" ng-controller="appCtrl">
-  <ul>
-    <li ng-repeat="x in products">{{x}}<span ng-click="removeItem($index)">×</span></li>
-  </ul>
-  <input ng-model="addMe">
-  <button ng-click="addItem()">Add</button>
-  <p>{{errortext}}</p>
-</div>
+<h4>Shopping List</h4>
+  {{name}} - {{price}}
+
+    <div ng-controller="shopCtrl" class="shopListApp">
+        <div class="row header">
+            <h4>List</h4>
+        </div>
+        <div class="row list">
+            <ul>
+                <li ng-repeat="x in products">
+                    {{x}}<span ng-click="removeItem($index)" class="delBtn">&times;</span>
+                </li>
+            </ul>
+        </div>
+
+        <input ng-model="addItem">
+        <button ng-click="addItemFx()">Add</button>
+        <p>{{errortext}}</p>
+    </div>
   
 </body>
   
