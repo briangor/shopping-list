@@ -1,5 +1,5 @@
 var app = angular.module("ShoppingListApp", []); 
-app.controller("appCtrl", function($scope) {
+app.controller("shopCtrl", function($scope) {
     $scope.products = ["Milk", "Bread", "Cheese"];
     $scope.addItem = function () {
         $scope.errortext = "";
