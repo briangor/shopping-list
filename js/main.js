@@ -10,6 +10,7 @@ app.controller("shopCtrl", function($scope) {
         } else {
             $scope.errortext = "The item is already in your shopping list.";
         }
+        $scope.addItem=" ";
     };
     
     $scope.removeItem = function (x) {
