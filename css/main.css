@@ -1,4 +1,81 @@
+<<<<<<< Updated upstream
 body{
   background-image: linear-gradient(130deg, #c9d6ff, #e2e2e2);
   font-family: Helvetica;
 }
+=======
+* {
+    color: #000;
+}
+
+body {
+    background-image: linear-gradient(137deg, #fdfcfb, #e2d1c3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-blend-mode: soft-light;
+}
+
+.shopListApp {
+    text-align: center;
+    border: 1px solid silver;
+    width: 30%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgb(233, 233, 233);
+}
+
+.list {
+    background-color: #fff;
+    padding-top: 5px;
+}
+
+h4 {
+    font-size: 26px;
+    font-family: Helvetica;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    border: 1px solid silver;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.delBtn {
+    cursor: pointer;
+    font-size: 24px;
+    color: red;
+    margin-left: 50px;
+}
+
+input {
+    height: 24px;
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+button {
+    height: 28px;
+    width: 50px;
+    background-color: #fff;
+    border: 1px solid silver;
+    border-radius: 5px;
+    color: #000;
+}
+
+button:hover {
+    background-color: #fff;
+    border: 1px solid black;
+}
+>>>>>>> Stashed changes
