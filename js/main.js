@@ -1,6 +1,6 @@
 var app = angular.module("ShoppingListApp", []); 
 app.controller("shopCtrl", function($scope) {
-    $scope.products = ["Milk", "Bread", "Cheese"];
+    $scope.products = ["Milk", "Bread", "Cheese", "Cake"];
     
     $scope.addItemFx = function () {
         $scope.errortext = "";
