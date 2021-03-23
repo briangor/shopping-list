@@ -10,7 +10,7 @@
 
 <body>
   
-<div ng-app="myShoppingList" ng-controller="myCtrl">
+<div ng-app="ShoppingListApp" ng-controller="appCtrl">
   <ul>
     <li ng-repeat="x in products">{{x}}<span ng-click="removeItem($index)">×</span></li>
   </ul>
