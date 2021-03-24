@@ -4,14 +4,25 @@
 <head>
   <title>Shopping List App</title> 
   <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script src="js/main.js"></script>
 </head>
 
 <body>
   
-<h4>Shopping List</h4>
     <div ng-app="ShoppingListApp" ng-controller="shopCtrl" class="shopListApp">
+      <div class="col-md-3">
+        
+        <div class="input-container">
+          <input ng-model="addItem">
+          <button ng-click="addItemFx()"> Add</button>
+          <p>{{errortext}}</p>
+
+        </div>
+      </div>
+      <div class="col-md-9">
+        
         <div class="row header">
             <h4>List</h4>
         </div>
@@ -22,11 +33,11 @@
                 </li>
             </ul>
         </div>
+        
+      </div>
+      
 
-        <input ng-model="addItem">
-        <button ng-click="addItemFx()"> Add</button>
-        <p>{{errortext}}</p>
-    </div>
+            </div>
   
 </body>
   
