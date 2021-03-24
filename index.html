@@ -10,37 +10,40 @@
 </head>
 
 <body>
-  
-    <div ng-app="ShoppingListApp" ng-controller="shopCtrl">
+      <div ng-app="ShoppingListApp" ng-controller="shopCtrl">
       
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4 col-sm-4 input-row">
         
         <div class="input-container">
-          <input ng-model="addItem">
+          <input ng-model="addItem" placeholder="Enter item"><br/>
           <button ng-click="addItemFx()"> Add</button>
           <p>{{errortext}}</p>
 
         </div>
       </div>
-      <div class="col-md-9">
-        
-        <div class="row header">
-            <h4>List</h4>
+      <div class="col-md-8 col-sm-8 display-row">
+        <div class="display-table">
+        <div class="row table-head">
+        check
         </div>
-        <div class="row list">
-            <ul>
-                <li ng-repeat="x in products">
+        <div class="row">
+        <ul>
+           <li ng-repeat="x in products">
                     {{x}}<span ng-click="removeItem($index)" class="delBtn">&times;</span>
                 </li>
-            </ul>
+        </ul>
+
+        </div>
+        
         </div>
         
       </div>
       </div>  
 
     </div>
-  
+
+    
 </body>
   
 </html>
