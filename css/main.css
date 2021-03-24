@@ -25,6 +25,10 @@ body {
     background-color: rgb(233, 233, 233);
 }
 
+.input-container{
+  border: 1px solid purple;
+}
+
 .list {
     background-color: #fff;
     padding-top: 5px;
