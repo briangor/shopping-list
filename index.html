@@ -14,37 +14,33 @@
       
       <div class="row">
 
-      <div class="col-md-3 col-sm-3 input-row">
-        <span class="title">Add Item</span>
-        <div class="input-container">
-          <input ng-model="addItem" placeholder="Enter item"><br/>
-          <button ng-click="addItemFx()"> Add</button>
-          <p>{{errortext}}</p>
+        <div class="col-md-3 col-sm-3 input-row">
+          <span class="title">Add Item</span>
+          <div class="input-container">
+            <input ng-model="addItem" placeholder="Enter item"><br/>
+            <button ng-click="addItemFx()"> Add</button>
+            <p>{{errortext}}</p>
+          </div>
+          <div class="actions">
+            <button class="btn btn-primary btn-sm" type="button">Print</button>
+            <button class="btn btn-danger btn-sm" type="button">Clear</button>
+          </div>
         </div>
-        <div class="actions">
-          <button class="btn btn-primary btn-sm" type="button">Print</button>
-          <button class="btn btn-danger btn-sm" type="button">Clear</button>
-        </div>
-      </div>
 
-      <div class="col-md-8 col-sm-8 display-row">
-        <div class="display-table">
-        <div class="row table-head">
-        check
-        </div>
-        <div class="row">
-        <ul>
-           <li ng-repeat="x in products">
-                    {{x}}<span ng-click="removeItem($index)" class="delBtn">&times;</span>
-             </li>
-        </ul>
-
-        </div>
-        
-        </div>
-        
-      </div>
-      </div>  
+        <div class="col-md-8 col-sm-8 display-row">
+          <div class="display-table">
+            <div class="row table-head">
+            <span class="">List</span>
+            </div>
+            <div class="row">
+            <ul>
+              <li ng-repeat="x in products">
+                        {{x}}<span ng-click="removeItem($index)" class="delBtn">&times;</span>
+                </li>
+            </ul>
+            </div>  
+          </div>
+        </div>  
 
     </div>
 
