@@ -1,5 +1,16 @@
 var app = angular.module("ShoppingListApp", []); 
 app.controller("shopCtrl", function($scope) {
+    $scope.minimize = false;
+    $scope.maximize = true;
+    $scope.minimizeFx = function () {
+        $scope.minimize = true;
+        $scope.maximize = false;
+    }
+    $scope.maximizeFx = function () {
+        $scope.minimize = false;
+        $scope.maximize = true;
+    }
+    
     $scope.products = ["Milk", "Bread", "Cheese", "Cake"];
     
     $scope.addItemFx = function () {
