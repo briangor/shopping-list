@@ -4,7 +4,7 @@ body {
     background-size: cover;
     height: 100vh;
     background-blend-mode: soft-light;
-    padding: 4em;
+    padding: 60px;
 }
 
 /* .shopListApp {
@@ -98,10 +98,15 @@ button:hover {
     overflow: hidden;
 }
 
-.table-head{
+.display-table-head{
 	background-color: skyblue;
     padding-left: 24px;
 }
+
+.display-table-body {
+    padding: 20px 
+}
+
 .list {
     background-color: #fff;
     padding-top: 5px;
@@ -113,9 +118,13 @@ ul {
 
 li {
     border: 1px solid silver;
+    border-radius: 5px;
     margin: auto;
     width: 100%;
     margin-bottom: 5px;
+    padding: 3px;
+    line-height: 100%;
+    background-color: rgb(214, 235, 243);
 }
 
 .delBtn {
