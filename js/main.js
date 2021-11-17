@@ -37,7 +37,7 @@ app.controller("shopCtrl", function($scope) {
             });
 
             console.log("$scope.addItem: " + $scope.addItem );
-            console.log("$scope.setQuantity "+ $scope.setQuantity);
+           
         } else {
             $scope.errortext = "The item is already in your shopping list.";
         }
