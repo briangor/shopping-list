@@ -45,7 +45,6 @@ app.controller("shopCtrl", function($scope) {
         $scope.setQuantity=0;
     };
 
-    
     $scope.removeItem = function (x) {
         $scope.errortext = "";    
         $scope.products.splice(x, 1);
