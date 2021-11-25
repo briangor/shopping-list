@@ -14,7 +14,6 @@ app.controller("shopCtrl", function($scope) {
     //Variables
     $scope.setQuantity;
 
-
     //JSON file to store items
     //$scope.products = ["Milk", "Bread", "Cheese", "Cake"];
     $scope.products = [{
