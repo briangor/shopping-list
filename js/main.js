@@ -24,7 +24,6 @@ app.controller("shopCtrl", function($scope) {
         "quantity": 3
     }];
     
-
     $scope.addItemFx = function () {
         $scope.errortext = "";
         if (!$scope.addItem) {return;}        
