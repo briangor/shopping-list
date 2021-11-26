@@ -22,6 +22,7 @@ app.controller("shopCtrl", function($scope) {
     },{
         "title": "bread",
         "quantity": 3
+
     }];
     
     $scope.addItemFx = function () {
