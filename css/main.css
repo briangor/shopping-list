@@ -81,6 +81,7 @@ button:hover {
 
 .actions{
     margin-top: 1rem;
+    color: red;
 }
 
 .actions button{
