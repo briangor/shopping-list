@@ -36,6 +36,7 @@
           </div>
         </div>
 
+
         <div class="col-md-8 col-sm-8 display-row">
           <div class="display-table">
             <div class="row display-table-head">
@@ -48,23 +49,19 @@
                 <div class="col-md-3 title">Action</div>
               </div>
               <div class="row" ng-repeat="product in products" style=" width: 100%;">
-                
                   <span ng-if="products == 0">List is empty</span>
                     <div class="col-md-6">{{ product.title }}</div>
                     <div class="col-md-3">{{ product.quantity }}</div>
                     <div class="col-md-3">
                       <span ng-click="removeItem($index)" class="delBtn">&times;</span>
-                    </div>
-                  
-              
+                    </div>                
               </div>
             </div>  
           </div>
+
+
         </div>  
-
     </div>
-
-    
 </body>
   
 </html>

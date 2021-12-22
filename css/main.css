@@ -81,7 +81,9 @@ button:hover {
 
 .actions{
     margin-top: 1rem;
+    color: red;
 }
+
 .actions button{
     width: 49%;   
 }
@@ -90,10 +92,6 @@ button:hover {
 
 
 /*DISPLAY SECTION*/
-.display-row{
-    
-}
-
 .display-table{
 	border: 1px solid silver;
     border-radius: 5px;
@@ -117,6 +115,7 @@ button:hover {
     background-color: #fff;
     padding-top: 5px;
 }
+
 /*
 ul {
     list-style-type: none;
@@ -140,6 +139,4 @@ li {
     margin-left: 50px;
 }*/
 /*END*/
-
-/* Animation */
 

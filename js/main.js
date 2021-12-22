@@ -14,7 +14,6 @@ app.controller("shopCtrl", function($scope) {
     //Variables
     $scope.setQuantity;
 
-
     //JSON file to store items
     //$scope.products = ["Milk", "Bread", "Cheese", "Cake"];
     $scope.products = [{
@@ -23,9 +22,9 @@ app.controller("shopCtrl", function($scope) {
     },{
         "title": "bread",
         "quantity": 3
+
     }];
     
-
     $scope.addItemFx = function () {
         $scope.errortext = "";
         if (!$scope.addItem) {return;}        
@@ -37,7 +36,7 @@ app.controller("shopCtrl", function($scope) {
             });
 
             console.log("$scope.addItem: " + $scope.addItem );
-            console.log("$scope.setQuantity "+ $scope.setQuantity);
+           
         } else {
             $scope.errortext = "The item is already in your shopping list.";
         }
@@ -45,7 +44,6 @@ app.controller("shopCtrl", function($scope) {
         $scope.setQuantity=0;
     };
 
-    
     $scope.removeItem = function (x) {
         $scope.errortext = "";    
         $scope.products.splice(x, 1);
